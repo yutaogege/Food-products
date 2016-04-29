@@ -366,4 +366,191 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/*
+ * Swiper - Mobile Touch Slider CSS
+ * http://www.idangero.us/sliders/swiper
+ *
+ * Vladimir Kharlampidi, The iDangero.us
+ * http://www.idangero.us/
+ * 
+ * Copyright 2012-2013, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ *
+ * Licensed under GPL & MIT
+ *
+*/
+/* ===============================================================
+Basic Swiper Styles 
+================================================================*/
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  -webkit-transition-property: -webkit-transform, left, top;
+  -webkit-transition-duration: 0s;
+  -webkit-transform: translate3d(0px, 0, 0);
+  -webkit-transition-timing-function: ease;
+  -moz-transition-property: -moz-transform, left, top;
+  -moz-transition-duration: 0s;
+  -moz-transform: translate3d(0px, 0, 0);
+  -moz-transition-timing-function: ease;
+  -o-transition-property: -o-transform, left, top;
+  -o-transition-duration: 0s;
+  -o-transform: translate3d(0px, 0, 0);
+  -o-transition-timing-function: ease;
+  -o-transform: translate(0px, 0px);
+  -ms-transition-property: -ms-transform, left, top;
+  -ms-transition-duration: 0s;
+  -ms-transform: translate3d(0px, 0, 0);
+  -ms-transition-timing-function: ease;
+  -webkit-transition-property: left, top, -webkit-transform;
+  transition-property: left, top, -webkit-transform;
+  -moz-transition-property: transform, left, top, -moz-transform;
+  transition-property: transform, left, top;
+  transition-property: transform, left, top, -webkit-transform, -moz-transform;
+  transition-duration: 0s;
+  transform: translate3d(0px, 0, 0);
+  transition-timing-function: ease;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.swiper-free-mode > .swiper-wrapper {
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  float: left;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+  -ms-touch-action: pan-y;
+}
+
+.swiper-wp8-vertical {
+  -ms-touch-action: pan-x;
+}
+
+/* ===============================================================
+Your custom styles, here you need to specify container's and slide's
+sizes, pagination, etc.
+================================================================*/
+.swiper-container {
+  /* Specify Swiper's Size: */
+    /*width:200px;
+	height: 100px;*/
+}
+
+.swiper-slide {
+  /* Specify Slides's Size: */
+    /*width: 100%;
+	height: 100%;*/
+}
+
+.swiper-slide-active {
+  /* Specific active slide styling: */
+}
+
+.swiper-slide-visible {
+  /* Specific visible slide styling: */
+}
+
+/* ===============================================================
+Pagination Styles
+================================================================*/
+.swiper-pagination-switch {
+  /* Stylize pagination button: */
+}
+
+.swiper-active-switch {
+  /* Specific active button style: */
+}
+
+.swiper-visible-switch {
+  /* Specific visible button style: */
+}
+
+.main_banner {
+  min-width: 1200px;
+  *width: 100%;
+  margin: 0 auto;
+  height: 500px;
+  background: #f4f4f4;
+}
+.main_banner .swiper-wrapper {
+  background: transparent;
+}
+.main_banner .arrow-left {
+  background: url('../images/arrows.png?1461946405') no-repeat left top;
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 2;
+}
+.main_banner .arrow-right {
+  background: url('../images/arrows.png?1461946405') no-repeat left bottom;
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 2;
+}
+.main_banner .swiper-slide {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main_banner .swiper-slide a {
+  display: block;
+  height: 100%;
+}
+.main_banner .pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  padding-top: 50px;
+  z-index: 2;
+}
+.main_banner .swiper-pagination-switch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 3px;
+  -moz-border-radius: 10px;
+       border-radius: 10px;
+  background: #595858;
+  font-size: 0\9;
+  cursor: pointer;
+}
+.main_banner .swiper-pagination-switch {
+  *display: inline;
+}
+.main_banner .swiper-active-switch {
+  background: red;
+}
+
 /*# sourceMappingURL=style.css.map */

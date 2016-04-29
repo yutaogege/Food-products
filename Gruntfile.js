@@ -189,7 +189,7 @@ module.exports = function(grunt) {
                     port: 9000,
                     server: {
                         baseDir: ['<%= config.app %>'],
-                        index:"zhuanti-details.html"
+                        index:"index.html"
                     },
                     open: "external"
                 }

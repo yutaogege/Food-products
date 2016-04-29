@@ -1,2 +1,66 @@
-@import "compass","normalize";
+@import "compass", "normalize", "components/swiper";
 $browser-minimum-versions: ("ie": "6");
+//大轮播banner
+.main_banner {
+    min-width: 1200px;
+    *width: 100%;
+    margin: 0 auto;
+    height: 500px;
+    background: #f4f4f4;
+    .swiper-wrapper {
+        background: transparent;
+    }
+    .arrow-left {
+        background: image-url("arrows.png") no-repeat left top;
+        position: absolute;
+        left: 60px;
+        top: 50%;
+        margin-top: -15px;
+        width: 17px;
+        height: 30px;
+        z-index: 2;
+    }
+    .arrow-right {
+        background: image-url("arrows.png") no-repeat left bottom;
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        margin-top: -15px;
+        width: 17px;
+        height: 30px;
+        z-index: 2;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-repeat: no-repeat;
+        a {
+            display: block;
+            height: 100%;
+        }
+    }
+    .pagination {
+        position: absolute;
+        left: 0;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        padding-top: 50px;
+        z-index: 2;
+    }
+    .swiper-pagination-switch {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin: 0 3px;
+        border-radius: 10px;
+        background: #595858;
+        font-size: 0\9;
+        cursor: pointer;
+    }
+    .swiper-pagination-switch {
+        *display: inline;
+    }
+    .swiper-active-switch {
+        background: red;
+    }
+}
