@@ -4,6 +4,7 @@
 ## 安装grunt
 
 在命令行之行下面的命令，-g是指将grunt安装到全局
+> 这里默认你已安装了node和npm
 
 ```shell
 npm install -g grunt-cli
