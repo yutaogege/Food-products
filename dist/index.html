@@ -1,0 +1,69 @@
+<!DOCTYPE html><!--[if lt IE 6]><html class="ie6"><![endif]-->
+<!--[if IE 7]><html class="ie7"><![endif]-->
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if gte IE 9]><html class="ie9"><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>于大涛</title>
+</head>
+<body>
+  <div href="#" src="ggg" class="hh">头部</div>
+  <div class="swiper-container main_banner"><a href="javascript:;" class="arrow-left"></a><a href="javascript:;" class="arrow-right"></a>
+    <div class="swiper-wrapper">
+      <div style="background-image:url(./pic/banner01.jpg)" class="swiper-slide"><a href="#"></a></div>
+      <div style="background-image:url(./pic/banner02.jpg)" class="swiper-slide"><a href="#"></a></div>
+      <div style="background-image:url(./pic/banner03.jpg)" class="swiper-slide"><a href="#"></a></div>
+      <div style="background-image:url(./pic/banner04.jpg)" class="swiper-slide"><a href="#"></a></div>
+      <div style="background-image:url(./pic/banner05.jpg)" class="swiper-slide"><a href="#"></a></div>
+    </div>
+    <div class="pagination pagination0"></div>
+  </div>
+  <div class="yuzi">鱼籽</div>
+  <!--[if IE 6]>
+  <script src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+  <script>DD_belatedPNG.fix('img,i,span,.dd-png');</script>
+  <![endif]-->
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="./js/idangerous.swiper.min.js"></script>
+  <script>
+    $(function(){
+    	//首页轮播
+    	$('.main_banner').each(function(index) {
+    		var count = $(this).find(".swiper-slide").length;
+    		if (count > 1) {
+    			var $this = $(this).swiper({
+    				pagination: '.pagination' + index, //分页标记
+    				loop: true, //循环
+    				autoplay: 5000, //自动播放，不指定默认不播放，单位为ms
+    				autoplayDisableOnInteraction: false,
+    				speed: 1000,
+    				paginationClickable: true //分页标记是否可点击
+    			});
+    			//向左翻页
+    			$(this).find('.arrow-left').on('click', function(e) {
+    				e.preventDefault() //阻止默认的
+    				$this.swipePrev() //前一个
+    			});
+    			//向右翻页
+    			$(this).find('.arrow-right').on('click', function(e) {
+    				e.preventDefault() //阻止默认的
+    				$this.swipeNext() //后一个
+    			});
+    			$(this).hover(function() {
+    				$this.stopAutoplay();
+    			}, function() {
+    				$this.startAutoplay();
+    			});
+    		} else {
+    			$(this).swiper({
+    				autoplay: false //自动播放，不指定默认不播放，单位为ms
+    			});
+    			$(this).find('.arrow-left').hide();
+    			$(this).find('.arrow-right').hide();
+    		}
+    	});
+    });
+  </script>
+</body></html>

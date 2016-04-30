@@ -2,3 +2,5 @@
 *.scssc
 
 node_modules
+
+*.map
