@@ -1,0 +1,14 @@
+extends ./layout/layout
+block append head
+	title 鱼籽
+block content
+	ul
+		-for(var i=1;i<=10;i++){
+			li
+				a: img(src="0#{i}.jpg")
+		-}
+	each item, i in a
+		if item.name=="maodaozi"
+			div.red #{item.name}:#{item.age}
+		else
+			div #{item.name}:#{item.age}

@@ -149,8 +149,8 @@ module.exports = function(grunt) {
             },
             build: {
                 files: {
-                    '<%= config.dist %>/js/scroll.js': ['<%= config.dist %>/js/scroll.js'],
-                    '<%= config.dist %>/js/slideFocus.js': ['<%= config.dist %>/js/slideFocus.js'],
+                    '<%= config.dist %>/js/idangerous.swiper.min.js': ['<%= config.dist %>/js/idangerous.swiper.min.js'],
+                    // '<%= config.dist %>/js/slideFocus.js': ['<%= config.dist %>/js/slideFocus.js'],
                 },
             }
         },
