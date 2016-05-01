@@ -456,10 +456,39 @@ html {
   background: #32b16c;
 }
 .footer-top ul {
+  padding: 0;
   list-style: none;
+  text-align: center;
+  font-size: 0;
 }
 .footer-top li {
   display: inline-block;
+  width: 170px;
+}
+.footer-top li a {
+  display: block;
+  padding: 30px 0;
+  text-decoration: none;
+}
+.footer-top li div {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer-bottom {
+  background: #1b1b1b;
+}
+.footer-bottom dl {
+  padding: 60px 0 50px 0;
+}
+.footer-bottom dl.container {
+  overflow: hidden;
+}
+.footer-bottom dd {
+  float: left;
+  width: 50%;
+  margin: 0;
 }
 
 /*# sourceMappingURL=common.css.map */
