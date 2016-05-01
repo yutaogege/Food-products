@@ -1,0 +1,12 @@
+$browser-minimum-versions: ("ie": "6");
+@import "compass", "normalize";
+html{
+	font-family: Microsoft Yahei, sans-serif;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+
+}
+@import "components/header";
+@import "components/footer";

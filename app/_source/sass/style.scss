@@ -1,5 +1,5 @@
-@import "compass", "normalize", "components/swiper","components/header";
 $browser-minimum-versions: ("ie": "6");
+@import "compass", "components/swiper";
 //大轮播banner
 .main_banner {
     min-width: 1200px;

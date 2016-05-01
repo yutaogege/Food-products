@@ -1,0 +1,73 @@
+.header{
+	position: relative;
+	z-index: 2;
+	height: 160px;
+	background: image-url("top-back.png") center;
+	box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+	.container{
+		position: relative;
+		z-index: 2;
+		height: 100%;
+	}
+	.bg{
+		position: absolute;
+		z-index: 0;
+		bottom: -40px;
+		left: 50%;
+		width: 142px;
+		height: 142px;
+		margin-left: -71px;
+		border-radius: 50%;
+		background: image-url("banner-bg-01.png") no-repeat center bottom;
+		box-shadow: 0px 0px 8px #000,2px 0 5px #000 inset;
+
+	}
+	.logo{
+		position: absolute;
+		left: 50%;
+		z-index: 1;
+		bottom: -25px;
+		width: 138px;
+		height: 138px;
+		margin-left: -69px;
+		background: image-url("logo.png") no-repeat;
+	}
+	.nav{
+		padding-top: 100px;
+		div{
+			@include float(left);
+			width: 50%;
+		}
+	}
+	ul{
+		
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li{
+			display: inline-block;
+			height: 35px;
+			margin: 0 45px;
+			text-align: center;
+			&.active{
+				border-bottom: 3px solid #32b16c;
+				a{
+					color: #32b16c;
+				}
+			}
+		}
+		a{
+			font-size: 24px;
+			color: #fefefe;
+			text-decoration: none;
+		}
+		&.nav-left{
+			margin-right: 100px;
+			text-align: right;
+		}
+		&.nav-right{
+			text-align: left;
+			margin-left: 100px;
+		}
+	}
+}

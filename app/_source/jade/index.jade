@@ -1,7 +1,24 @@
 extends ./layout/layout
 block append head
-	title 于大涛
-
+	title 首页
+block header
+	div.header
+		div.container
+			a.logo(href="javascript:;")
+			div.bg
+			div.nav
+				div
+					ul.nav-left
+						li.active
+							a(href="") 首页
+						li
+							a(href="") 餐品
+				div
+					ul.nav-right
+						li
+							a(href="") 食材
+						li
+							a(href="") 我们
 block content
 	include ./components/swiper
 block append script
