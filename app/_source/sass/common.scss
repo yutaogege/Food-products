@@ -3,10 +3,35 @@ $browser-minimum-versions: ("ie": "6");
 html{
 	font-family: Microsoft Yahei, sans-serif;
 }
+body{
+	background: #ece9e2;
+}
 .container{
 	width: 1200px;
 	margin: 0 auto;
 
+}
+.content{
+	width: 1140px;
+	margin: 0 auto;
+	overflow: hidden;
+	@at-root{
+		.section{
+		    h2{
+		        margin: 0;
+		        font-size: 24px;
+		        font-weight: normal;
+		        color: #000;
+		        i{
+		            display: inline-block;
+		            width: 16px;
+		            height: 16px;
+		            margin-right: 15px;
+		            background: #32b16c;
+		        }
+		    }
+		}
+	}
 }
 @import "components/header";
 @import "components/footer";

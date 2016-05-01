@@ -1,41 +1,46 @@
 extends ./layout/layout
 block append head
+	link(rel='stylesheet',href='css/index.css')
 	title 首页
-block header
-	div.header
-		div.container
-			a.logo(href="javascript:;")
-			div.bg
-			div.nav
-				div
-					ul.nav-left
-						li.active
-							a(href="") 首页
-						li
-							a(href="") 餐品
-				div
-					ul.nav-right
-						li
-							a(href="") 食材
-						li
-							a(href="") 我们
 block content
 	include ./components/swiper
+	div.content
+		div.section.section01
+			h2 
+				i
+				|推荐
+			dl
+				-for(var i=1;i<=6;i++){
+					dd
+						a(href=""): img(src="./pic/contain-img_0#{i+2}.jpg")
+						div.inner-contain
+							if i==1||i==5
+								div.label-box
+									img(src="./images/tabs-icon_a.png")
+									img(src="./images/tabs-icon_b.png")
+							h3 餐品名
+							div.des
+								img(src="./pic/media01.png")
+								p.
+									餐品简介餐品简介餐品简介餐品简介
+									餐品简介餐品简介餐品简介餐品简介
+									餐品简介餐品简介餐品简介餐品简介
+									餐品简介餐品简介餐品简介餐品简介
+				-}
+				
 block append script
 	script(src="./js/idangerous.swiper.min.js")
 	script.
 		$(function(){
 			//首页轮播
-			$('.main_banner').each(function(index) {
+			$('.main_banner').each(function() {
 				var count = $(this).find(".swiper-slide").length;
 				if (count > 1) {
 					var $this = $(this).swiper({
-						pagination: '.pagination' + index, //分页标记
 						loop: true, //循环
 						autoplay: 5000, //自动播放，不指定默认不播放，单位为ms
 						autoplayDisableOnInteraction: false,
-						speed: 1000,
-						paginationClickable: true //分页标记是否可点击
+						speed: 1000
 					});
 					//向左翻页
 					$(this).find('.arrow-left').on('click', function(e) {

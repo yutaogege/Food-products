@@ -1,5 +1,4 @@
-$btn-spacing: 4px;
-
-// @import "compass";
-// @import "today-hot/btn/*.png";
-// @include all-btn-sprites;
+$icon-spacing: 4px;
+$icon-sprite-dimensions:true;
+@import "icon/*.png";
+@include all-icon-sprites;

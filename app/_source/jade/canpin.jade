@@ -1,0 +1,85 @@
+extends ./layout/layout
+block append head
+	link(rel='stylesheet',href='css/canpin.css')
+	title 餐品
+block header
+	div.header
+		div.container
+			a.logo(href="javascript:;")
+			div.bg
+			div.nav
+				div
+					ul.nav-left
+						li
+							a(href="") 首页
+						li.active
+							a(href="") 餐品
+				div
+					ul.nav-right
+						li
+							a(href="") 食材
+						li
+							a(href="") 我们
+block content
+	include ./components/swiper
+	div.content
+		div.section.section02
+			h2 
+				i
+				|餐品
+			div.filter
+				a.active(href="javascript:;") 增肌
+				a(href="javascript:;") 减脂
+			dl
+				-for(var i=1;i<=12;i++){
+					dd: a(href="")
+						div.img-box
+							img(src="./pic/contain-img_03.jpg",width="360",height="208")
+						div.b-title
+							h3.name 餐品名 XXXXXXXXXXX
+							span.price ¥ 00
+				-}
+				
+block append script
+	script(src="./js/idangerous.swiper.min.js")
+	script.
+		$(function(){
+			//首页轮播
+			$('.main_banner').each(function() {
+				var count = $(this).find(".swiper-slide").length;
+				if (count > 1) {
+					var $this = $(this).swiper({
+						loop: true, //循环
+						autoplay: 5000, //自动播放，不指定默认不播放，单位为ms
+						autoplayDisableOnInteraction: false,
+						speed: 1000
+					});
+					//向左翻页
+					$(this).find('.arrow-left').on('click', function(e) {
+						e.preventDefault() //阻止默认的
+						$this.swipePrev() //前一个
+					});
+					//向右翻页
+					$(this).find('.arrow-right').on('click', function(e) {
+						e.preventDefault() //阻止默认的
+						$this.swipeNext() //后一个
+					});
+					$(this).hover(function() {
+						$this.stopAutoplay();
+					}, function() {
+						$this.startAutoplay();
+					});
+				} else {
+					$(this).swiper({
+						autoplay: false //自动播放，不指定默认不播放，单位为ms
+					});
+					$(this).find('.arrow-left').hide();
+					$(this).find('.arrow-right').hide();
+				}
+			});
+			$(".filter a").on("click",function(){
+				$(this).addClass("active").siblings().removeClass("active")
+			})
+		});
+
+	

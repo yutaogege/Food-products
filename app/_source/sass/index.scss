@@ -1,33 +1,33 @@
 $browser-minimum-versions: ("ie": "6");
 @import "compass", "components/swiper";
 //大轮播banner
+$arrow-spacing: 4px;
+$arrow-sprite-dimensions:true;
+@import "arrow/*.png";
+@include all-arrow-sprites;
+
 .main_banner {
     min-width: 1200px;
     *width: 100%;
     margin: 0 auto;
-    height: 500px;
+    height: 400px;
+    border-bottom: 10px solid #32b16c;
     background: #f4f4f4;
     .swiper-wrapper {
         background: transparent;
     }
     .arrow-left {
-        background: image-url("arrows.png") no-repeat left top;
         position: absolute;
         left: 60px;
         top: 50%;
         margin-top: -15px;
-        width: 17px;
-        height: 30px;
         z-index: 2;
     }
     .arrow-right {
-        background: image-url("arrows.png") no-repeat left bottom;
         position: absolute;
         right: 60px;
         top: 50%;
         margin-top: -15px;
-        width: 17px;
-        height: 30px;
         z-index: 2;
     }
     .swiper-slide {
@@ -62,5 +62,59 @@ $browser-minimum-versions: ("ie": "6");
     }
     .swiper-active-switch {
         background: red;
+    }
+}
+
+// 主体内容部分
+.section01{
+    margin-top: 60px;
+    dl{
+        margin: 35px 0 0;
+    }
+    dd{
+        margin: 0;
+        margin-bottom: 36px;
+        overflow: hidden;
+        background: #fff;
+        a{
+            float: left;
+        }
+    }
+    .inner-contain{
+        position: relative;
+        padding: 48px;
+        overflow: hidden;
+        h3{
+            margin: 0;
+            font-size: 28px;
+            font-weight: normal;
+            color: #000;
+        }
+    }
+    .label-box{
+        position: absolute;
+        right: 48px;
+        img{
+            margin-left: 20px;
+        }
+    }
+    .des{
+        margin-top: 83px;
+        overflow: hidden;
+        img{
+            float: left;
+            margin-right: 56px;
+        }
+        p{
+            margin: 0;
+            padding-top: 5px;
+            font-size: 14px;
+            color: #000;
+            line-height: 24px;
+            overflow: hidden;
+        }
+    }
+    img{
+        vertical-align: top;
     }
 }

@@ -1,3 +1,4 @@
+@import "sprite";
 .footer-top{
 	background: #32b16c;
 	ul{
@@ -33,5 +34,38 @@
 		float: left;
 		width: 50%;
 		margin: 0;
+		&.left-box{
+			ul{
+				margin: 0;
+				padding: 25px 0 0 130px;
+				list-style: none;
+				font-size: 18px;
+				color: #fff;
+			}
+			i{
+				display: inline-block;
+				margin-right: 10px;
+				vertical-align: middle;
+			}
+			span{
+				font-size: 14px;
+				margin-left: 18px;
+			}
+		}
+		&.right-box{
+			div{
+				height: 110px;
+				padding-left: 148px;
+				border-left: 2px solid #c6c6c6;
+				color: #fff;
+			}
+			label{
+				margin-right: 36px;
+			}
+			img{
+				vertical-align: middle;
+			}
+		}
 	}
+	
 }

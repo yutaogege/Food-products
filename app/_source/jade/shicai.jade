@@ -1,0 +1,50 @@
+extends ./layout/layout
+block append head
+	link(rel='stylesheet',href='css/shicai.css')
+	title 食材
+block header
+	div.header
+		div.container
+			a.logo(href="javascript:;")
+			div.bg
+			div.nav
+				div
+					ul.nav-left
+						li
+							a(href="") 首页
+						li
+							a(href="") 餐品
+				div
+					ul.nav-right
+						li.active
+							a(href="") 食材
+						li
+							a(href="") 我们
+block content
+	div.content
+		div.section.section03
+			div.section03-title
+				span
+				h1.h1.
+					Our materials<br>
+					我们的食材
+			p.
+				进口橄榄油是我们队食材要求精益求精的又一绝佳体现。高成本的进口实仓让风靡欧洲的高品质轻体食体验在中国得以实现。
+			p.
+				Produced from Andalusia's Golden Coast,a hundred percent natural fruit juice with fragrance and non greasy,mixed with fresh lemon juice,creating a fresh and creamy taste.
+		div.section.section04
+			-for(var i=1;i<=2;i++){
+				h2
+					i
+					|某某食材
+				div.card
+					div.imgbox
+						img(src="./pic/contian-img_0#{i}.jpg")
+					div.text
+						p.
+							进口橄榄油是我们队食材要求精益求精的又一绝佳体现。高成本的进口实仓让风靡欧洲的高品质轻体食体验在中国得以实现。
+						p.
+							Produced from Andalusia's Golden Coast,a hundred percent natural fruit juice with fragrance and non greasy,mixed with fresh lemon juice,creating a fresh and creamy taste.
+			-}
+				
+block script
