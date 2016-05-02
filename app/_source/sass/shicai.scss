@@ -1,10 +1,10 @@
-.section03{
+.section03 {
     padding-bottom: 50px;
-    .section03-title{
+    .section03-title {
         position: relative;
         padding-top: 170px;
         text-align: center;
-        span{
+        span {
             position: absolute;
             top: 0;
             left: 50%;
@@ -12,18 +12,19 @@
             width: 0;
             border-left: 1px dashed #3e3334;
         }
-        .h1{
+        .h1 {
             margin-bottom: 40px;
             font-size: 24px;
             color: #000;
         }
     }
-    p{
+    p {
         margin: 20px 0;
         font-size: 18px;
         color: #000;
     }
 }
+
 .section04 {
     .card {
         margin: 20px 0 80px;
@@ -37,6 +38,41 @@
         p {
             font-size: 18px;
             color: #000;
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    // 食材
+    .section03 {
+        padding-bottom: 20px;
+        .section03-title {
+            padding-top: 80px;
+            span {
+                height: 80px;
+            }
+            .h1 {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+        }
+        p {
+            padding: 0 5px;
+            font-size: 14px;
+        }
+    }
+    .section04 {
+        .card {
+            margin: 10px 0 20px;
+            img {
+                width: 100%;
+            }
+            .text {
+                padding: 10px;
+            }
+            p {
+                font-size: 14px;
+            }
         }
     }
 }

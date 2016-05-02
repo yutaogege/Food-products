@@ -65,4 +65,55 @@
 .section05 .peitu {
   margin: 12px 0 0 12px;
 }
+
+@media all and (max-width: 600px) {
+  .section03 {
+    padding-bottom: 20px;
+  }
+  .section03 .section03-title {
+    padding-top: 80px;
+  }
+  .section03 .section03-title span {
+    height: 80px;
+  }
+  .section03 .section03-title .h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .section03 p {
+    padding: 0 5px;
+    font-size: 14px;
+  }
+
+  .section05 dd {
+    margin-bottom: 10px;
+  }
+  .section05 .text {
+    float: none;
+    display: block;
+    margin: 0;
+    padding: 10px;
+    width: auto;
+  }
+  .section05 .text p {
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+  .section05 .title-container {
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
+  .section05 .title-container h2 {
+    font-size: 16px;
+  }
+  .section05 .title-container h3 {
+    font-size: 18px;
+  }
+  .section05 .title-box {
+    border: none;
+  }
+  .section05 .imgbox img {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=aboutus.css.map */

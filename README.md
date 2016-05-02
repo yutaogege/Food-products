@@ -1,5 +1,5 @@
 # Food-products
-餐品项目说明
+甜心豹项目说明
 
 ## 安装grunt
 

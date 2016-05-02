@@ -39,4 +39,37 @@
   font-size: 18px;
   color: #000;
 }
+
+@media all and (max-width: 600px) {
+  .section03 {
+    padding-bottom: 20px;
+  }
+  .section03 .section03-title {
+    padding-top: 80px;
+  }
+  .section03 .section03-title span {
+    height: 80px;
+  }
+  .section03 .section03-title .h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .section03 p {
+    padding: 0 5px;
+    font-size: 14px;
+  }
+
+  .section04 .card {
+    margin: 10px 0 20px;
+  }
+  .section04 .card img {
+    width: 100%;
+  }
+  .section04 .card .text {
+    padding: 10px;
+  }
+  .section04 .card p {
+    font-size: 14px;
+  }
+}
 /*# sourceMappingURL=shicai.css.map */

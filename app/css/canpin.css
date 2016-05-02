@@ -230,6 +230,7 @@ Pagination Styles
   background: #fff;
 }
 .section02 dd .img-box img {
+  width: 100%;
   vertical-align: top;
 }
 .section02 .b-title {
@@ -242,5 +243,46 @@ Pagination Styles
   float: left;
   margin: 0;
   font-weight: normal;
+}
+
+@media all and (max-width: 600px) {
+  div.main_banner {
+    min-width: 100%;
+    width: 100%;
+    height: 300px;
+  }
+  div.main_banner .arrow-left, div.main_banner .arrow-right {
+    display: none;
+  }
+  div.main_banner .swiper-slide {
+    -moz-background-size: cover;
+         background-size: cover;
+  }
+
+  .section02 {
+    margin-top: 30px;
+  }
+  .section02 .filter {
+    right: 10px;
+  }
+  .section02 dl {
+    margin: 15px 0 0;
+  }
+  .section02 dl dd {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .section02 dl dd .img-box {
+    width: 100%;
+    height: auto;
+  }
+  .section02 dl dd .img-box img {
+    width: 100%;
+  }
+  .section02 .b-title {
+    padding: 0 5px;
+    line-height: 32px;
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=canpin.css.map */

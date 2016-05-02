@@ -1,11 +1,10 @@
 $browser-minimum-versions: ("ie": "6");
-@import "compass","components/swiper";
+@import "compass", "components/swiper";
 //大轮播banner
 $arrow-spacing: 4px;
 $arrow-sprite-dimensions:true;
 @import "arrow/*.png";
 @include all-arrow-sprites;
-
 .main_banner {
     min-width: 1200px;
     *width: 100%;
@@ -64,50 +63,93 @@ $arrow-sprite-dimensions:true;
         background: red;
     }
 }
-.section02{
+
+.section02 {
     position: relative;
     margin-top: 60px;
-    .filter{
+    .filter {
         position: absolute;
         top: 0;
         right: 0;
         line-height: 30px;
-        a{
+        a {
             color: #000;
             margin-left: 20px;
-            &.active{
+            &.active {
                 color: #32b16c;
             }
         }
     }
-    a{
+    a {
         text-decoration: none;
     }
-    dl{
+    dl {
         margin: 35px -30px 0 0;
         overflow: hidden;
     }
-    dd{
+    dd {
         float: left;
         margin: 0 30px 50px 0;
-        .img-box{
+        .img-box {
             width: 360px;
             height: 208px;
             background: #fff;
-            img{
+            img {
+                width: 100%;
                 vertical-align: top;
             }
         }
     }
-    .b-title{
+    .b-title {
         text-align: right;
         line-height: 48px;
         font-size: 18px;
         color: #333;
     }
-    .name{
+    .name {
         float: left;
         margin: 0;
         font-weight: normal;
+    }
+}
+
+@media all and (max-width: 600px) {
+    // 轮播
+    div.main_banner {
+        min-width: 100%;
+        width: 100%;
+        height: 300px;
+        .arrow-left, .arrow-right {
+            display: none;
+        }
+        .swiper-slide {
+            background-size: cover;
+        }
+    }
+    // 餐品
+    .section02 {
+        margin-top: 30px;
+        .filter {
+            right: 10px;
+        }
+        dl {
+            margin: 15px 0 0;
+            dd {
+                width: 100%;
+                margin-bottom: 15px;
+                .img-box {
+                    width: 100%;
+                    height: auto;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .b-title {
+            padding: 0 5px;
+            line-height: 32px;
+            font-size: 14px;
+        }
     }
 }

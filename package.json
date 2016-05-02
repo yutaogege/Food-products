@@ -1,7 +1,7 @@
 {
-  "name": "weather",
+  "name": "Food-products",
   "version": "3.0.0",
-  "description": "天气预报",
+  "description": "甜心豹",
   "main": "Gruntfile.js",
   "dependencies": {
     "autoprefixer": "^6.3.1",
@@ -22,7 +22,7 @@
   },
   "devDependencies": {},
   "keywords": [
-    "天气预报"
+    "甜心豹"
   ],
   "author": "121595113@qq.com",
   "license": "ISC"

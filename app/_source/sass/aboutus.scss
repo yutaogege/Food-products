@@ -1,12 +1,12 @@
 $browser-minimum-versions: ("ie": "6");
 @import "compass";
-.section03{
+.section03 {
     padding-bottom: 50px;
-    .section03-title{
+    .section03-title {
         position: relative;
         padding-top: 170px;
         text-align: center;
-        span{
+        span {
             position: absolute;
             top: 0;
             left: 50%;
@@ -14,56 +14,112 @@ $browser-minimum-versions: ("ie": "6");
             width: 0;
             border-left: 1px dashed #3e3334;
         }
-        .h1{
+        .h1 {
             margin-bottom: 40px;
             font-size: 24px;
             color: #000;
         }
     }
 }
-.section05{
-    img{
+
+.section05 {
+    img {
         vertical-align: top;
     }
-    dl{
+    dl {
         margin: 0;
     }
-    dd{
+    dd {
         margin: 0;
         margin-bottom: 70px;
         overflow: hidden;
         background: #fff;
     }
-    .text{
+    .text {
         @include float(left);
         margin: 0 142px;
         padding: 60px 0;
         width: 475px;
         line-height: 25px;
     }
-    .title-container{
+    .title-container {
         padding-top: 102px;
         overflow: hidden;
         color: #000;
-        h2{
+        h2 {
             line-height: 18px;
             margin-bottom: 2px;
             font-size: 18px;
         }
-        h3{
+        h3 {
             margin: 0;
             line-height: 24px;
             font-size: 24px;
             font-weight: normal;
         }
     }
-    .title-box{
+    .title-box {
         padding-left: 8px;
         height: 42px;
         border-left: 2px solid #32b16c;
         font-size: 14px;
     }
-    .peitu{
+    .peitu {
         margin: 12px 0 0 12px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .section03 {
+        padding-bottom: 20px;
+        .section03-title {
+            padding-top: 80px;
+            span {
+                height: 80px;
+            }
+            .h1 {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+        }
+        p {
+            padding: 0 5px;
+            font-size: 14px;
+        }
+    }
+    // 关于我们
+    .section05 {
+        dd {
+            margin-bottom: 10px;
+        }
+        .text {
+            float: none;
+            display: block;
+            margin: 0;
+            padding: 10px;
+            width: auto;
+            p {
+                font-size: 12px;
+                line-height: 1.5em;
+            }
+        }
+        .title-container {
+            padding-top: 12px;
+            padding-bottom: 10px;
+            h2 {
+                font-size: 16px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+        }
+        .title-box {
+            border: none;
+        }
+        .imgbox {
+            img {
+                width: 100%;
+            }
+        }
     }
 }

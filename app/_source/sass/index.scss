@@ -5,7 +5,6 @@ $arrow-spacing: 4px;
 $arrow-sprite-dimensions:true;
 @import "arrow/*.png";
 @include all-arrow-sprites;
-
 .main_banner {
     min-width: 1200px;
     *width: 100%;
@@ -66,46 +65,46 @@ $arrow-sprite-dimensions:true;
 }
 
 // 主体内容部分
-.section01{
+.section01 {
     margin-top: 60px;
-    dl{
+    dl {
         margin: 35px 0 0;
     }
-    dd{
+    dd {
         margin: 0;
         margin-bottom: 36px;
         overflow: hidden;
         background: #fff;
-        a{
+        a {
             float: left;
         }
     }
-    .inner-contain{
+    .inner-contain {
         position: relative;
         padding: 48px;
         overflow: hidden;
-        h3{
+        h3 {
             margin: 0;
             font-size: 28px;
             font-weight: normal;
             color: #000;
         }
     }
-    .label-box{
+    .label-box {
         position: absolute;
         right: 48px;
-        img{
+        img {
             margin-left: 20px;
         }
     }
-    .des{
+    .des {
         margin-top: 83px;
         overflow: hidden;
-        img{
+        img {
             float: left;
             margin-right: 56px;
         }
-        p{
+        p {
             margin: 0;
             padding-top: 5px;
             font-size: 14px;
@@ -114,8 +113,57 @@ $arrow-sprite-dimensions:true;
             overflow: hidden;
         }
     }
-    img{
+    img {
         vertical-align: top;
     }
 }
-@import "pages/600";
+
+// 响应式
+@media all and (max-width: 600px) {
+    // 轮播
+    div.main_banner {
+        min-width: 100%;
+        width: 100%;
+        height: 300px;
+        .arrow-left, .arrow-right {
+            display: none;
+        }
+        .swiper-slide {
+            background-size: cover;
+        }
+    }
+    // 首页
+    .section01 {
+        margin-top: 30px;
+        dl {
+            margin-top: 15px;
+        }
+        dd {
+            margin-bottom: 10px;
+            a {
+                float: none;
+                display: block;
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .inner-contain {
+            padding: 10px;
+        }
+        .label-box {
+            right: 10px;
+        }
+        .des {
+            margin-top: 20px;
+            img {
+                margin-right: 5px;
+            }
+            p {
+                font-size: 12px;
+                line-height: 1.5em;
+            }
+        }
+    }
+}
