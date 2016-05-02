@@ -249,4 +249,172 @@ Pagination Styles
   vertical-align: top;
 }
 
+@media all and (max-width: 600px) {
+  .header {
+    height: 70px;
+    width: 100%;
+    min-width: 100%;
+  }
+  .header ul.nav-left {
+    margin-right: 30%;
+  }
+  .header ul.nav-right {
+    margin-left: 30%;
+  }
+  .header ul a {
+    font-size: 16px;
+  }
+  .header ul li {
+    margin: 0 8%;
+  }
+  .header .nav {
+    padding-top: 20px;
+  }
+
+  .header .logo {
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+  }
+
+  .header .bg02 {
+    width: 90px;
+    height: 90px;
+    margin-left: -45px;
+    bottom: -32px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  div.main_banner {
+    min-width: 100%;
+    width: 100%;
+    height: 300px;
+  }
+  div.main_banner .arrow-left, div.main_banner .arrow-right {
+    display: none;
+  }
+  div.main_banner .swiper-slide {
+    -moz-background-size: cover;
+         background-size: cover;
+  }
+
+  .content {
+    width: 100%;
+    overflow-y: hidden;
+  }
+
+  .footer-bottom dd {
+    float: none;
+    width: 100%;
+  }
+
+  .footer-bottom dl.container {
+    padding: 30px 0;
+  }
+
+  .footer-bottom dd.left-box ul {
+    padding: 0 5%;
+    font-size: 12px;
+  }
+
+  .footer-bottom dd.right-box {
+    margin-top: 10px;
+  }
+
+  .footer-bottom dd.right-box div {
+    padding-left: 0;
+    text-align: center;
+    border: none;
+  }
+  .footer-bottom dd.right-box div label {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-top li {
+    width: 33%;
+  }
+  .footer-top li div {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .footer-top li a {
+    padding: 20px 0;
+  }
+
+  .footer-top {
+    min-width: 100%;
+  }
+
+  .footer-bottom {
+    min-width: 100%;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .section01 {
+    margin-top: 30px;
+  }
+  .section01 dl {
+    margin-top: 15px;
+  }
+  .section01 dd {
+    margin-bottom: 10px;
+  }
+  .section01 dd a {
+    float: none;
+    display: block;
+    display: block;
+  }
+  .section01 dd a img {
+    width: 100%;
+  }
+  .section01 .inner-contain {
+    padding: 10px;
+  }
+  .section01 .label-box {
+    right: 10px;
+  }
+  .section01 .des {
+    margin-top: 20px;
+  }
+  .section01 .des img {
+    margin-right: 5px;
+  }
+  .section01 .des p {
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .section02 {
+    margin-top: 30px !important;
+  }
+  .section02 .filter {
+    right: 10px !important;
+  }
+  .section02 dl {
+    margin: 15px 0 0 !important;
+  }
+  .section02 dl dd {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .section02 dl dd .img-box {
+    width: 100%;
+    height: auto;
+  }
+  .section02 dl dd .img-box img {
+    width: 100%;
+  }
+  .section02 .b-title {
+    padding: 0 5px;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

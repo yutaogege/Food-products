@@ -3,20 +3,24 @@ $browser-minimum-versions: ("ie": "6");
 html{
 	font-family: Microsoft Yahei, sans-serif;
 }
+
 body{
 	background: #ece9e2;
+	
 }
 .container{
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0 auto;
 
 }
 .content{
-	width: 1140px;
+	width: 1200px;
 	margin: 0 auto;
 	overflow: hidden;
 	@at-root{
 		.section{
+			width: 1140px;
+			margin: 0 auto;
 		    h2{
 		        margin: 0;
 		        font-size: 24px;
@@ -35,3 +39,5 @@ body{
 }
 @import "components/header";
 @import "components/footer";
+// @import "pages/800";
+@import "pages/600";

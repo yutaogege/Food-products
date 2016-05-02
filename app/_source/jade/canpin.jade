@@ -4,9 +4,10 @@ block append head
 	title 餐品
 block header
 	div.header
+		div.bg01
+		div.bg02
 		div.container
 			a.logo(href="javascript:;")
-			div.bg
 			div.nav
 				div
 					ul.nav-left
@@ -34,7 +35,7 @@ block content
 				-for(var i=1;i<=12;i++){
 					dd: a(href="")
 						div.img-box
-							img(src="./pic/contain-img_03.jpg",width="360",height="208")
+							img(src="./pic/contain-img_03.jpg")
 						div.b-title
 							h3.name 餐品名 XXXXXXXXXXX
 							span.price ¥ 00

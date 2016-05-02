@@ -1,5 +1,6 @@
 @import "sprite";
 .footer-top{
+	min-width: 1200px;
 	background: #32b16c;
 	ul{
 		padding: 0;
@@ -23,6 +24,7 @@
 	}
 }
 .footer-bottom{
+	min-width: 1200px;
 	background: #1b1b1b;
 	dl{
 		padding: 60px 0 50px 0;

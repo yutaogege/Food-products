@@ -1,17 +1,24 @@
 .header{
 	position: relative;
 	z-index: 2;
+	min-width: 1200px;
 	height: 160px;
-	background: image-url("top-back.png") center;
 	box-shadow: 0px 3px 5px rgba(0,0,0,.4);
 	.container{
 		position: relative;
 		z-index: 2;
 		height: 100%;
 	}
-	.bg{
+	.bg01{
 		position: absolute;
-		z-index: 0;
+		width: 100%;
+		height: 100%;
+		background: image-url("top-back.png") center;
+		
+	}
+	.bg02{
+		position: absolute;
+		z-index: -1;
 		bottom: -40px;
 		left: 50%;
 		width: 142px;
@@ -31,9 +38,11 @@
 		height: 138px;
 		margin-left: -69px;
 		background: image-url("logo.png") no-repeat;
+		background-size: 100% 100%;
 	}
 	.nav{
 		padding-top: 100px;
+		overflow: hidden;
 		div{
 			@include float(left);
 			width: 50%;
